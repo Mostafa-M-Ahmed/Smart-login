@@ -1,0 +1,33 @@
+::placeholder {
+    color: whitesmoke !important;
+    opacity: 1; /* Firefox */
+  }
+body{
+    background-color: #24353F;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+.box{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1) !important;
+}
+input{
+    background-color: transparent !important;
+    color: white !important;
+}
+.modal-header span {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.modal-body, .modal-body li{
+    color: whitesmoke;
+}
+.modal-body i {
+    color: red;
+}
+/* .dropdown-menu[data-bs-popper] {
+    left: 70%;
+    position: absolute;
+} */

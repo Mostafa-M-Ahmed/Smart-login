@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mostafa Mohamed">
+    <title>Login</title>
+    <meta name="description" content="description">
+
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="box shadow-lg rounded text-center p-5 m-5 mx-auto w-75">
+                        <h1 class="text-info mb-4">Smart Login System</h1>
+                        <form action="">
+                            <input type="text" class="form-control mb-3" placeholder="Enter your name" required id="userName">
+                            <p class="text-danger text-start d-none">User name must be at least 3 characters!</p>
+                            <input type="email" class="form-control mb-3" placeholder="Enter your email" required id="userEmail">
+                            <p class="text-danger text-start d-none"></p>
+                            <input type="password" class="form-control mb-3" placeholder="Enter your password" required id="userPassword">
+                            <p class="text-danger text-start d-none">Password must containt at least 6 characters!</p>
+                            <button class="btn btn-info w-100 mb-3 mt-3" type="submit" id="signup">Sign up</button>
+                        </form>
+                        <p class="text-white">Already have an account? <a class="link-light fw-bold"
+                                href="index.html">Sign in</a></p>
+                    </div>
+
+
+
+
+
+                    <!-- alert window -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary d-none" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" id="modalBtn">
+                        Launch demo modal
+                    </button>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header">
+                                    <div class="d-flex">
+                                        <span class="rounded-circle me-2 bg-danger"></span>
+                                        <span class="rounded-circle me-2 bg-warning"></span>
+                                        <span class="rounded-circle me-2 bg-success"></span>
+                                    </div>
+                                    <button type="button" class="btn-close bg-light" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <h2 class="text-info mb-3">Account created successfully</h2>
+                                        <p class="text-white">Back to login page? <a class="link-light fw-bold"
+                                                href="index.html"> Sign in</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/signupPage.js"></script>
+</body>
+
+</html>

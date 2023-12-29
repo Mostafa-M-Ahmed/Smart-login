@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mostafa Mohamed">
+    <title>Login</title>
+    <meta name="description" content="description">
+
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg shadow-lg box" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand text-white-50">SMART LOGIN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <div class="d-flex justify-content-center align-items-center flex-xs-column-reverse flex-sm-column-reverse flex-md-column-reverse flex-lg-row gap-4">
+                <a href="" class="btn btn-outline-danger fw-bold" id="deleteBtn">Delete account</a>
+                <a href="" class="btn btn-outline-success fw-bold" id="logoutBtn">Log out</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="container my-5 text-center h-100 d-flex align-items-center">
+            <div class="box shadow-lg rounded text-center p-5 m-5 mx-auto w-75">
+                <div class="group m-auto w-75 p-5">
+                    <h1 id="title" class="text-info">Welcome name</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Delete alert window -->
+    <button type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+        id="modalBtn">
+        Launch demo modal
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <div class="d-flex">
+                        <span class="rounded-circle me-2 bg-danger"></span>
+                        <span class="rounded-circle me-2 bg-warning"></span>
+                        <span class="rounded-circle me-2 bg-success"></span>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h2 class="text-info mb-3">Account deleted successfully</h2>
+                        <p>You have been signed out!</p>
+                        <p class="text-white mt-5">Back to login page? <a class="link-light fw-bold" href="index.html">Sign
+                                in</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/homePage.js"></script>
+</body>
+
+</html>
