@@ -2,7 +2,6 @@ var userEmailInput = document.getElementById('userEmail');
 var userPasswordInput = document.getElementById('userPassword');
 var loginBtn = document.getElementById('login');
 var link = document.querySelector('form');
-var noAccount = document.getElementById('test')
 var warningMSG = document.getElementById('warningMSG');
 
 
@@ -27,7 +26,7 @@ function login() {
         }
     }
     if(x == false)
-    warningMSG.innerHTML = "Account doesn't exist!";
+    warningMSG.innerHTML = "Wrong email or password!";
 }
 
 

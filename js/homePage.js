@@ -3,12 +3,28 @@ var title = document.getElementById('title');
 var deleteBtn = document.getElementById('deleteBtn')
 var activeAccIndex;
 var modalBtn = document.getElementById('modalBtn');
+var validBtn = document.getElementById('validBtn');
 
 if (localStorage.getItem('accounts') != null)
     var accountLists = JSON.parse(localStorage.getItem('accounts'))
 
+validUser();
 
-activeAccount();
+function validUser() {
+    var valid = false;
+    for (var i = 0; i < accountLists.length; i++) {
+        if (accountLists[i].loggedIn == true) {
+            valid = true;
+            break
+        }
+    }
+    if (valid == true)
+        activeAccount();
+
+    else
+        validBtn.click()
+}
+
 
 function activeAccount() {
     for (var i = 0; i < accountLists.length; i++) {
