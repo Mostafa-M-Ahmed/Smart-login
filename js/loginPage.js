@@ -1,7 +1,6 @@
 var userEmailInput = document.getElementById('userEmail');
 var userPasswordInput = document.getElementById('userPassword');
 var loginBtn = document.getElementById('login');
-var link = document.querySelector('form');
 var warningMSG = document.getElementById('warningMSG');
 
 
@@ -9,7 +8,7 @@ if (localStorage.getItem('accounts') != null)
     var accountLists = JSON.parse(localStorage.getItem('accounts'))
 
 loginBtn.onclick = function (e) {
-    // e.preventDefault();
+    e.preventDefault();
     login();
 }
 
@@ -19,7 +18,7 @@ function login() {
         if (valid(i)) {
             accountLists[i].loggedIn = true;
             localStorage.setItem('accounts', JSON.stringify(accountLists));
-            link.setAttribute('action', 'home.html');
+            window.location.href="home.html";
             x = true;
             break;
             
