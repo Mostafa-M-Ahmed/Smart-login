@@ -1,6 +1,6 @@
 ::placeholder {
     color: whitesmoke !important;
-    opacity: 1; /* Firefox */
+    opacity: 1;
   }
 body{
     background-color: #24353F;
@@ -27,11 +27,5 @@ input{
 .modal-body i {
     color: red;
 }
-/* .dropdown-menu[data-bs-popper] {
-    left: 70%;
-    position: absolute;
-} */
-
-
 
 
